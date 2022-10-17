@@ -82,7 +82,7 @@ function createLastUsers (img){
         imgLast.src = img.avatar_url
     let figcaption = document.createElement("figcaption")
         figcaption.innerText = "Acessar este perfil"
-        figcaption.style.display = "none"
+        // figcaption.style.display = "none"
         figure.append(imgLast, figcaption)
 
     divLastUsers.appendChild(figure)

@@ -147,20 +147,13 @@
     border: 2px solid var(--color-grey-7);
 }
 
-/* .figure:hover figcaption {
-    margin-top: -5px;
-    background-color: var(--color-grey-7);
-    width: 124px;
-    height: 26px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 4px 8px;
-    font-size: 12px;
-    font-family: var(--font-family);
+.figure figcaption {
+    position: fixed;
+    margin-top: 40px;
+    display: none;
 }
 
-.figure figcaption {
+.figure:hover > figcaption{
     background-color: var(--color-grey-7);
     width: 124px;
     height: 26px;
@@ -170,4 +163,5 @@
     padding: 4px 8px;
     font-size: 12px;
     font-family: var(--font-family);
-} */
+    border-radius: 8px;
+}
