@@ -11,7 +11,9 @@ inputUser.addEventListener("keyup", () => {
         buttonUser.style.color = "var(--color-grey-7)"
         spanNotFound.style.visibility = "hidden"
         inputUser.style.border = ""
+        buttonUser.removeAttribute("disabled")
     }else{
+        buttonUser.setAttribute("disabled", "")
         buttonUser.style.backgroundColor = ""
         buttonUser.style.color = ""
         spanNotFound.style.visibility = "hidden"
@@ -28,11 +30,12 @@ buttonUser.addEventListener("click", () => {
 
         if(user.message == "Not Found"){
             spanNotFound.style.visibility = "visible"
+            buttonUser.setAttribute("disabled", "")
             inputUser.style.border = "1px solid var(--color-brand-1)"
         }else{
 
             buttonUser.innerText = ""
-            buttonUser.innerHTML = `<span class="loading"></span>`
+            buttonUser.innerHTML = `<span class="loading"></span>`  
             setTimeout(() =>{
                 window.location.href = `../profile/index.html?value=${inputUser.value}`
             }, 5000)
@@ -82,7 +85,6 @@ function createLastUsers (img){
         imgLast.src = img.avatar_url
     let figcaption = document.createElement("figcaption")
         figcaption.innerText = "Acessar este perfil"
-        // figcaption.style.display = "none"
         figure.append(imgLast, figcaption)
 
     divLastUsers.appendChild(figure)
