@@ -1,0 +1,193 @@
+body {
+    background-color: var(--color-grey-2);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 50%;
+}
+
+.div-header {
+    height: 80px;
+    width: 1000px;
+    max-width: 1000px;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.div-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 2px var(--color-brand-2);
+}
+
+.div-name {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.div-name h3 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-grey-7);
+}
+
+.div-name p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.div-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.email {
+    background-color: var(--color-brand-2);
+    text-decoration: none;
+    padding: 12px 25px;
+    color: var(--color-grey-7);
+    font-family: var(--font-family);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.email:hover {
+    background-color: var(--color-brand-1);
+}
+
+.change-user {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-grey-7);
+}
+
+.change-user:hover {
+    background-color: var(--color-grey-2);
+}
+
+.div-img-div2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ul-API {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    width: 108%;
+}
+
+.card {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 490px;
+    height: 243px;
+    background-color: var(--color-grey-2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.card:hover {
+    background-color: var(--color-grey-1);
+    border: 2px solid var(--color-grey-7);
+}
+
+.name-description {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-description h3 {
+    color: var(--color-grey-7);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.name-description p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.div-rep {
+    display: flex;
+    gap: 22px;
+}
+
+.rep {
+    text-decoration: none;
+    background-color: var(--color-grey-1);
+    border: 1px solid var(--color-grey-7);
+    border-radius: 4px;
+    padding: 5.5px 8px;
+    color: var(--color-grey-7);
+    font-weight: 500;
+    font-style: normal;
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+
+.rep:hover {
+    background-color: var(--color-brand-2);
+    color: var(--color-grey-7);
+}
+
+.demo {
+    border: 1px solid var(--color-grey-7);
+    border-radius: 4px;
+    background-color: var(--color-grey-1);
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    text-decoration: none;
+    padding: 5.5px 8px;
+    color: var(--color-grey-7);
+    font-weight: 500;
+    font-style: normal;
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+
+.demo:hover {
+    background-color: var(--color-brand-2);
+    color: var(--color-grey-7);
+}
